@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333333;
+            text-align: center;
+        }
+
+        .options {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .option-card {
+            width: 300px;
+            height: 200px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .option-card:hover {
+            transform: scale(1.05);
+        }
+
+        .option-card a {
+            color: #333333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .heartbeat {
+            font-size: 80px;
+            color: #ff4d4d;
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Health App</h1>
+
+    <div class="options">
+        <div class="option-card">
+            <i class="heartbeat">❤️</i>
+            <a href="predict_diabetes.html">Predict Diabetes</a>
+        </div>
+        <div class="option-card">
+            <img src="patient_icon.png" alt="Patient Icon" width="80px" height="80px">
+            <a href="show_patient.html">Show Patient</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Health App. All rights reserved.
+    </footer>
+</body>
+</html>
